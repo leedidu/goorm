@@ -38,5 +38,19 @@ public class ConsolIoEx {
         } else {
             System.out.println(num + "은 홀수입니다");
         }
+
+        if(num < 10) System.out.println(num + "은 한자리 수 입니다");
+        else if(num < 100) System.out.println(num + "은 두자리 수 입니다");
+        else if(num < 1000) System.out.println(num + "은 세자리 수 입니다");
+
+        // switch
+        switch (num){
+            case 1: System.out.println("일");
+            case 2: System.out.println("이");
+            break;
+            default:
+                System.out.println("아무것도 아님");
+                break;
+        }
     }
 }
